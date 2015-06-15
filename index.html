@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature change with elevation</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Temperature change with elevation">
+  <meta name="author" content="toucan15">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Temperature change with elevation</h1>
+    <h2>for hikers and mountain travelers</h2>
+    <p>toucan15<br/>coursera 09 data products</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Temperature Change Calculator</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Air temperature changes with elevation.</p>
+
+<p>In general, the temperature decreases 3.5 degrees F for every 1000 feet in elevation gain.</p>
+
+<p>If people don&#39;t plan ahead when hiking or traveling in the mountains they could be exposed to cold conditions and possibly hypothermia.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Intended Users</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Hikers and mountain travelers can use this app to anticipate temperature changes due to elevation and to therefore be better prepared for cooler conditions at higher elevations. </p>
+
+<p>The app can also be used to predict warmer temps at lower elevations although descending into warmer conditions is usually not as unexpected as ascending into cold conditions.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Here&#39;s How it Works</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Typical temperature change is 3.5 degrees Fahrenheit for every 1000 feet in elevation gain. To calculate the expected temperature change the app subtracts ending from starting elevation, divides the result by 1000 feet, then multiplies by 3.5 degrees.</p>
+
+<p>For example, let&#39;s say you start in Denver at about 5500 feet elevation and drive to the top of Mt Evans at 14200 feet. It&#39;s a warm day, 70 degrees F when you start. </p>
+
+<pre><code class="r">x &lt;- ((5500-14200)/1000)*3.5
+</code></pre>
+
+<p>The expected temperature change is</p>
+
+<pre><code>## [1] -30.45
+</code></pre>
+
+<p>In other words, it will be close to 30 degrees colder at 14200 feet than at 5500 feet so you should bring enough layers to be comfortable at 40 degrees.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Ease of use</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The app is easy to use and requires just two inputs: elevation at the start and expected elevation at the destination.</p>
+
+<p>Then the app calculates the expected change in temperature. If the result is negative, the temperature is expected to get colder. If the result is positive the temperature is expected to get warmer.</p>
+
+<p>This app can be used for elevations up to 20,000 feet. Above that level are the tallest mountains on earth and climbing these peaks is much difficult and technical. This app is intended for more casual use and thus does not include the highest mountains. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Temperature Change Calculator'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Intended Users'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Here&#39;s How it Works'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Ease of use'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='NA'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
